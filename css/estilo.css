@@ -32,3 +32,12 @@
 .exercicio__solucao{
     color:#515050;
 }
+
+.exercicio__form {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    width:60%;
+    align-items: center;    
+    margin:0 auto;
+}

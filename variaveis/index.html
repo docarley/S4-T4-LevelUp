@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,34 @@
     <link rel="stylesheet" href="./../css/estilo.css">
     <script src="./js/main.js" defer></script>
 </head>
+
 <body>
     <header class="topo">
-        <h1 class="topo__titulo container">Sprint 4 - LevelUp</h1>         
+        <h1 class="topo__titulo container">Sprint 4 - LevelUp</h1>
     </header>
     <main>
         <section class="exercicio container">
             <h2 class="exercicio__titulo">Exercício 1</h2>
             <div class="exercicio__solucao">
-                <p class="exercicio__solucao-txt"></p>
+                <p id="ex1" class="exercicio__solucao-txt"></p>
             </div>
-        </section>        
+        </section>
+        <section class="exercicio container">
+            <h2 class="exercicio__titulo">Exercício 2</h2>
+            <div class="exercicio__solucao">
+                <form action="#" class="exercicio__form">
+                    <label for="valorA">Digitar o valor de A:</label>
+                    <input type="text" name="valorA" id="valorA">
+                    <label for="valorA">Digitar o valor de B:</label>
+                    <input type="text" name="valorB" id="valorB">
+                    <input type="button" value="Inverter Valores" id="btn-inverter-valores">
+                </form>
+                <p id="ex2" class="exercicio__solucao-txt">
+
+                </p>
+            </div>
+        </section>
     </main>
 </body>
+
 </html>

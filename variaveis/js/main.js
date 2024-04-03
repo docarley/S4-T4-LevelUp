@@ -8,19 +8,19 @@
 
 let nome = "Juquinha";
 let telefone = "(13)98877-7766";
-let possuiConvenioMedico=true;
+let possuiConvenioMedico = true;
 let profissao = "Desenvolvedor Sênior";
-let salario=7100.65;
+let salario = 7100.65;
 
-const solucao = document.querySelector(".exercicio__solucao-txt");
+const solucao1 = document.querySelector("#ex1");
 
-let profissional = mostrarMensagemPrincipal(nome,telefone,possuiConvenioMedico,profissao,salario);
+let profissional = mostrarMensagemPrincipal(nome, telefone, possuiConvenioMedico, profissao, salario);
 
 console.log(profissional);
-solucao.innerHTML=profissional;
+solucao1.innerHTML = profissional;
 
 
-function mostrarMensagemPossuiConvenio(situacaoConvenio){
+function mostrarMensagemPossuiConvenio(situacaoConvenio) {
     if (situacaoConvenio) {
         return "possui convênio médico";
     } else {
@@ -28,7 +28,32 @@ function mostrarMensagemPossuiConvenio(situacaoConvenio){
     }
 }
 
-function mostrarMensagemPrincipal(nome, telefone, possuiConvenioMedico, profissao, salario){
+function mostrarMensagemPrincipal(nome, telefone, possuiConvenioMedico, profissao, salario) {
     let mensagem = `Olá! ${nome} é ${profissao} e seu salário é de R$ ${salario.toString().replace(".", ",")}. Seu telefone é ${telefone} e ele ${mostrarMensagemPossuiConvenio(possuiConvenioMedico)}.`;
+    return mensagem;
+}
+
+// Crie uma lógica que armazene dois números inteiros em duas variáveis. Em seguida, troque o valor dessas variáveis e exiba na tela. Por exemplo, uma variável ae outra b, em algum momento avai valer b, e bvai valer a, mas quando a = b, o valor inicial de apode ser perdido, atenção!
+
+const solucao2 = document.querySelector("#ex2");
+const btnInverterValores = document.querySelector("#btn-inverter-valores");
+
+let txtValorA = document.querySelector("#valorA").value;
+let txtValorB = document.querySelector("#valorB").value;
+
+btnInverterValores.addEventListener('click', () => {    
+    inverterValores();
+    solucao2.innerHTML = mostrarValoresInvertidos();
+})
+
+
+function inverterValores() {
+    let aux = txtValorA;
+    txtValorA = txtValorB;
+    txtValorB = aux;
+}
+
+function mostrarValoresInvertidos() {
+    let mensagem = `O valor de A agora é ${txtValorA}, e o valor de B agora é ${txtValorB}`;
     return mensagem;
 }
