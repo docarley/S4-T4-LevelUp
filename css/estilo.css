@@ -1,0 +1,30 @@
+.container {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.topo {
+    background-color: #0b0b42;
+    color: #FFF;
+    padding: 2em 3em;
+    text-align: center;
+}
+
+.exercicio {
+    margin-top: 16px;
+    color: #0b0b42;
+    text-align: center;
+    border: 1px solid #747373;
+    border-radius: 32px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+}
+
+.exercicio__titulo {
+    display: inline-block;
+    border-bottom: .25em solid #0b0b42;
+}
+
+.exercicio__solucao{
+    color:#515050;
+}
