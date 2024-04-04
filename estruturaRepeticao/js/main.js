@@ -1,11 +1,15 @@
 const solucaoParImpar = document.querySelector('#ex1');
 const solucaoMultiplo3 = document.querySelector('#ex2');
+const solucaoContagemRegressiva = document.querySelector('#ex3');
 
 let resultadoParImpar = mostrarParImpar(0, 50);
 solucaoParImpar.innerHTML = resultadoParImpar;
 
 let resultadoMultiplo3 = mostrarMultiplos(0,100,3);
 solucaoMultiplo3.innerHTML = resultadoMultiplo3;
+
+let contagemRegressiva = mostrarContagemRegressiva(100,0,2);
+solucaoContagemRegressiva.innerHTML=contagemRegressiva;
 
 
 function mostrarParImpar(numInicial, numFinal) {
@@ -42,5 +46,13 @@ function mostrarMultiplos(numInicial, numFinal, numReferencia) {
     // }
     //     j++;
     // }
+    return resultado;
+}
+
+function mostrarContagemRegressiva(numInicial, numFinal,passo){
+    let resultado="";
+    for (let i = numInicial; i>=numFinal; i=i-passo) {
+       resultado=`${resultado}<br>${i}`;   
+    }
     return resultado;
 }
