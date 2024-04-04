@@ -12,7 +12,7 @@ console.log(altura);
 
     if (validarEntradas(raio) && validarEntradas(altura)) {
         let area = calcularAreaCirculo(raio);
-        let volume = calcularVolumeCilindro(area, altura);
+        let volume = calcularVolumeCilindro(area, altura)*1000;
         resultadoVolume.innerHTML=`${volume.toFixed(2)} Litros`;
     } else{
         resultadoVolume.innerHTML="Valores Invalidos!!! Digite apenas números";
