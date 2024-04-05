@@ -47,3 +47,19 @@
     align-items: center;
     margin: 0 auto;
 }
+
+.exercicio__tabela{
+    width:60%;
+    margin:0 auto;
+    border:1px solid #a7a7a7;
+}
+
+.exercicio__tabela th{
+    background-color: #faebd7;
+    border:1px solid #cacaca;
+}
+
+.exercicio__tabela td{
+    border:1px solid #cacaca;
+}
+
